@@ -11,4 +11,8 @@ public class Task01Exception extends Exception {
     public Task01Exception(String message, Throwable cause) {
         super(message, cause);
     }
+
+    public Task01Exception(Throwable cause) {
+        super(cause);
+    }
 }

@@ -2,7 +2,7 @@ package by.stepanovichalena.task_01.task0107.runner;
 
 import by.stepanovichalena.task_01.reader.ConsoleReader;
 
-import by.stepanovichalena.task_01.task0107.entity.PointsAB;
+import by.stepanovichalena.task_01.task0107.entity.Points;
 import by.stepanovichalena.task_01.task0107.logic.CloserPoint;
 
 public class ViewCloserPoint {
@@ -11,8 +11,8 @@ public class ViewCloserPoint {
         int result;
         ConsoleReader consoleReader = new ConsoleReader();
         CloserPoint closerPoint = new CloserPoint();
-        PointsAB pointA = new PointsAB();
-        PointsAB pointB = new PointsAB();
+        Points pointA = new Points();
+        Points pointB = new Points();
         for (int i = 0; i < 4; i++) {
             switch (i) {
                 case 0:

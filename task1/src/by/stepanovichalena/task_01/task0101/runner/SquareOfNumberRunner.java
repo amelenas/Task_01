@@ -1,5 +1,6 @@
 package by.stepanovichalena.task_01.task0101.runner;
 
+import by.stepanovichalena.task_01.exception.Task01Exception;
 import by.stepanovichalena.task_01.reader.ConsoleReader;
 import by.stepanovichalena.task_01.task0101.logic.SquareOfNumber;
 
@@ -9,5 +10,6 @@ public class SquareOfNumberRunner {
         int number = consoleReader.readInt();
         SquareOfNumber squareOfNumber = new SquareOfNumber();
         System.out.println(squareOfNumber.squareCalculator(number));
+
     }
 }

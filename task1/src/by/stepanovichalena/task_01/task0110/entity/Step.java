@@ -2,35 +2,36 @@ package by.stepanovichalena.task_01.task0110.entity;
 
 import java.util.Objects;
 
-public class Points {
-    private double point;
+public class Step {
+    private double step;
 
-
-    public Points() {
+    public Step() {
     }
 
-    public double getPoint() {
-        return point;
+
+    public double getStep() {
+        return step;
     }
 
-    public void setPoint(double point) {
-        this.point = point;
+    public void setStep(double step) {
+        this.step = step;
     }
+
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null) return false;
         if (o.getClass() == this.getClass()) return false;
-        Points pointsAB = (Points) o;
-        return pointsAB.getPoint() == getPoint();
+        Step step1 = (Step) o;
+        return step1.getStep() == getStep();
     }
 
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = result * prime + Double.hashCode(point);
+        result = result * prime + Double.hashCode(step);
         return result;
     }
 }

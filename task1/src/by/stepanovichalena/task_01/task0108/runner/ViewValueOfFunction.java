@@ -12,7 +12,7 @@ public class ViewValueOfFunction {
         double number = consoleReader.readDouble();
 
         System.out.println("The value of the function is: " + calculateValueOfFunction.calculateFunction(number,
-                isNumberGreaterThanThree.isNumberGreaterThanThree(number)));
+                isNumberGreaterThanThree.isNumberGreaterThanTwo(number)));
 
     }
 }

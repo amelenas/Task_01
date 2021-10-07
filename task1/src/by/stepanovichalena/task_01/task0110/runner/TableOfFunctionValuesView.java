@@ -3,7 +3,7 @@ package by.stepanovichalena.task_01.task0110.runner;
 import by.stepanovichalena.task_01.exception.Task01Exception;
 import by.stepanovichalena.task_01.reader.ConsoleReader;
 import by.stepanovichalena.task_01.task0110.entity.Points;
-import by.stepanovichalena.task_01.task0110.entity.StepH;
+import by.stepanovichalena.task_01.task0110.entity.Step;
 import by.stepanovichalena.task_01.task0110.logic.ValuesCalculator;
 
 import java.util.Iterator;
@@ -14,7 +14,7 @@ public class TableOfFunctionValuesView {
     public static void main(String[] args) {
         Points a = new Points();
         Points b = new Points();
-        StepH stepH = new StepH();
+        Step stepH = new Step();
         ValuesCalculator valuesCalculator = new ValuesCalculator();
 
         ConsoleReader consoleReader = new ConsoleReader();

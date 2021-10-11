@@ -7,7 +7,7 @@ public class InscribedSquare {
 
     public double areaOfInscribedSquare(double areaOfBigSquare) throws Task01Exception {
         if (areaOfBigSquare <= 0) {
-            throw new Task01Exception("The area can't be less than or equals to 0");
+            throw new Task01Exception("The area is less than or equals to 0");
         }
         return areaOfBigSquare / 2;
     }

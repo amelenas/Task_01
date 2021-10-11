@@ -33,7 +33,7 @@ public class ViewCloserPoint {
                     break;
             }
         }
-        result = closerPoint.showCloserPoint(pointA.getX(), pointA.getY(), pointB.getX(), pointB.getY());
+        result = closerPoint.closerPoint(pointA.getX(), pointA.getY(), pointB.getX(), pointB.getY());
         switch (result) {
             case 1:
                 System.out.println("Point A is closer.");
@@ -43,6 +43,7 @@ public class ViewCloserPoint {
                 break;
             case 0:
                 System.out.println("The points are equal");
+                break;
         }
     }
 }

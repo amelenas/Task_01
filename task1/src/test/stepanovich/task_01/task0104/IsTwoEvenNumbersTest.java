@@ -8,13 +8,13 @@ import static org.junit.Assert.*;
 public class IsTwoEvenNumbersTest {
 
     @Test (expected = IllegalArgumentException.class)
-    public void isTwoEvenNumbersOrMore1() {
+    public void isTwoEvenNumbersNull() {
         IsTwoEvenNumbers isTwoEvenNumbers = new IsTwoEvenNumbers();
         isTwoEvenNumbers.isTwoEvenNumbersOrMore(null);
     }
 
     @Test
-    public void isTwoEvenNumbersOrMore2() {
+    public void isTwoEvenNumbersTrue() {
         IsTwoEvenNumbers isTwoEvenNumbers = new IsTwoEvenNumbers();
         boolean expected = true;
         boolean actual = isTwoEvenNumbers.isTwoEvenNumbersOrMore(1,2,3,4,5,6);
@@ -22,7 +22,7 @@ public class IsTwoEvenNumbersTest {
     }
 
     @Test
-    public void isTwoEvenNumbersOrMore3() {
+    public void isTwoEvenNumbersFalse() {
         IsTwoEvenNumbers isTwoEvenNumbers = new IsTwoEvenNumbers();
         boolean expected = false;
         boolean actual = isTwoEvenNumbers.isTwoEvenNumbersOrMore(1,3,5,6,7,11);

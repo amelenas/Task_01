@@ -11,20 +11,20 @@ public class TimesInSquareCounterTest {
     @Test
     public void timesInSquareCounter() throws Task01Exception {
         TimesInSquareCounter timesInSquareCounter = new TimesInSquareCounter();
-        double expected = 1.315;
+        double expected = 2;
         double actual = timesInSquareCounter.timesInSquareCounter(2.63);
         assertEquals(expected, actual, 0.01);
     }
 
     @Test(expected = Task01Exception.class)
-    public void testArea() throws Task01Exception {
+    public void timesInSquareCounterZero() throws Task01Exception {
         TimesInSquareCounter timesInSquareCounter = new TimesInSquareCounter();
         timesInSquareCounter.timesInSquareCounter(0);
 
     }
 
     @Test(expected = Task01Exception.class)
-    public void testArea2() throws Task01Exception {
+    public void  timesInSquareNegative() throws Task01Exception {
         TimesInSquareCounter timesInSquareCounter = new TimesInSquareCounter();
         timesInSquareCounter.timesInSquareCounter(-36);
 

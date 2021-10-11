@@ -1,7 +1,5 @@
 package by.stepanovichalena.task_01.task0110.entity;
 
-import java.util.Objects;
-
 public class Points {
     private double point;
 

@@ -1,6 +1,5 @@
 package by.stepanovichalena.task_01.task0104.runner;
 
-import by.stepanovichalena.task_01.task0104.entity.NumberForTask;
 import by.stepanovichalena.task_01.task0104.logic.IsTwoEvenNumbers;
 import by.stepanovichalena.task_01.reader.ConsoleReader;
 

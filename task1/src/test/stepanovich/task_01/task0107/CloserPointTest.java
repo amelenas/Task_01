@@ -8,7 +8,7 @@ import org.junit.Test;
 public class CloserPointTest {
 
     @Test
-    public void showCloserPoint() {
+    public void showCloserPointEqual() {
         CloserPoint closerPoint = new CloserPoint();
         Points pointsA = new Points();
         Points pointsB = new Points();
@@ -17,12 +17,12 @@ public class CloserPointTest {
         pointsB.setX(0);
         pointsB.setY(0);
         int expected = 0;
-        int actual = closerPoint.showCloserPoint(pointsA.getX(), pointsA.getY(), pointsB.getX(), pointsB.getY());
+        int actual = closerPoint.closerPoint(pointsA.getX(), pointsA.getY(), pointsB.getX(), pointsB.getY());
         assertEquals(expected, actual);
     }
 
     @Test
-    public void showCloserPoint1() {
+    public void showCloserPointACloser() {
         CloserPoint closerPoint = new CloserPoint();
         Points pointsA = new Points();
         Points pointsB = new Points();
@@ -31,12 +31,12 @@ public class CloserPointTest {
         pointsB.setX(20);
         pointsB.setY(20);
         int expected = 1;
-        int actual = closerPoint.showCloserPoint(pointsA.getX(), pointsA.getY(), pointsB.getX(), pointsB.getY());
+        int actual = closerPoint.closerPoint(pointsA.getX(), pointsA.getY(), pointsB.getX(), pointsB.getY());
         assertEquals(expected, actual);
     }
 
     @Test
-    public void showCloserPoint2() {
+    public void showCloserPointBCloser() {
         CloserPoint closerPoint = new CloserPoint();
         Points pointsA = new Points();
         Points pointsB = new Points();
@@ -45,7 +45,7 @@ public class CloserPointTest {
         pointsB.setX(10);
         pointsB.setY(10);
         int expected = -1;
-        int actual = closerPoint.showCloserPoint(pointsA.getX(), pointsA.getY(), pointsB.getX(), pointsB.getY());
+        int actual = closerPoint.closerPoint(pointsA.getX(), pointsA.getY(), pointsB.getX(), pointsB.getY());
         assertEquals(expected, actual);
     }
 }

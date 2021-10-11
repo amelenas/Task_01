@@ -17,13 +17,13 @@ public class AreaOfCircleTest {
     }
 
     @Test (expected = Task01Exception.class)
-    public void areaOfCircle2() throws Task01Exception {
+    public void areaOfCircleZero() throws Task01Exception {
         AreaOfCircle areaOfCircle = new AreaOfCircle();
         areaOfCircle.areaOfCircle(0);
     }
 
     @Test (expected = Task01Exception.class)
-    public void areaOfCircle3() throws Task01Exception {
+    public void areaOfCircleNegative() throws Task01Exception {
         AreaOfCircle areaOfCircle = new AreaOfCircle();
         areaOfCircle.areaOfCircle(-10);
     }

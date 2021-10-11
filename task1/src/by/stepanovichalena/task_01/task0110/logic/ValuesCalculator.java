@@ -11,7 +11,7 @@ public class ValuesCalculator {
         Map<Double, Double> result = new TreeMap<>();
 
         if (stepH <= 0) {
-            throw new Task01Exception("The step h can't be less than or equals to 0");
+            throw new Task01Exception("The step h is less than or equals to 0");
         }
         while (pointA <= pointB) {
             double f = Math.tan(pointA);

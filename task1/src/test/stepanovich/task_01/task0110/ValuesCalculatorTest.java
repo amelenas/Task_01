@@ -34,13 +34,20 @@ public class ValuesCalculatorTest {
         for (Double y: actual.keySet()){
             actualSum += actual.get(y);
         }
-        assertEquals(expectedSum, actualSum, 0.1);
+        assertEquals(expectedSum, actualSum, 0.001);
     }
 
     @Test(expected = Task01Exception.class)
-    public void valuesCalculator1() throws Task01Exception {
+    public void valuesCalculatorZeroH() throws Task01Exception {
         ValuesCalculator valuesCalculator = new ValuesCalculator();
         valuesCalculator.valuesCalculator(1, 10, 0);
+
+    }
+
+    @Test(expected = Task01Exception.class)
+    public void valuesCalculatorNegativeH() throws Task01Exception {
+        ValuesCalculator valuesCalculator = new ValuesCalculator();
+        valuesCalculator.valuesCalculator(1, 10, -10);
 
     }
 }

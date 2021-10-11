@@ -8,25 +8,25 @@ import static org.junit.Assert.*;
 public class CalculateValueOfFunctionTest {
 
     @Test
-    public void calculateFunction() {
+    public void functionMoreThanThree() {
         CalculateValueOfFunction calculateValueOfFunction = new CalculateValueOfFunction();
-        double expected = 27;
-        double actual = calculateValueOfFunction.calculateFunction(3, true);
+        double expected = 37;
+        double actual = calculateValueOfFunction.calculateFunction(4);
         assertEquals(expected, actual, 0.001);
     }
     @Test
-    public void calculateFunction2() {
+    public void functionLessThanThree () {
         CalculateValueOfFunction calculateValueOfFunction = new CalculateValueOfFunction();
         double expected = 0.5;
-        double actual = calculateValueOfFunction.calculateFunction(2, false);
+        double actual = calculateValueOfFunction.calculateFunction(2);
         assertEquals(expected, actual, 0.001);
     }
 
     @Test
-    public void calculateFunction3() {
+    public void functionZero() {
         CalculateValueOfFunction calculateValueOfFunction = new CalculateValueOfFunction();
         double expected = -0.16666;
-        double actual = calculateValueOfFunction.calculateFunction(0, false);
+        double actual = calculateValueOfFunction.calculateFunction(0);
         assertEquals(expected, actual, 0.001);
     }
 }

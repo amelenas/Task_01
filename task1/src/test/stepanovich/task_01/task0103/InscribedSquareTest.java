@@ -17,15 +17,14 @@ public class InscribedSquareTest {
     }
 
     @Test(expected = Task01Exception.class)
-    public void testArea() throws Task01Exception {
+    public void testAreaZero() throws Task01Exception {
         InscribedSquare inscribedSquare = new InscribedSquare();
         inscribedSquare.areaOfInscribedSquare(0);
 
     }
 
-
     @Test(expected = Task01Exception.class)
-    public void testArea2() throws Task01Exception {
+    public void testAreaNegative() throws Task01Exception {
         InscribedSquare inscribedSquare = new InscribedSquare();
         inscribedSquare.areaOfInscribedSquare(-36);
 

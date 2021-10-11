@@ -16,15 +16,31 @@ public class DaysInMonthTest {
         assertEquals(expected, actual);
     }
     @Test(expected = Task01Exception.class)
-    public void daysInMonth2() throws Task01Exception {
+    public void daysInMonthZero() throws Task01Exception {
         DaysInMonth daysInMonth = new DaysInMonth();
         daysInMonth.daysInMonth(0, true);
     }
 
     @Test(expected = Task01Exception.class)
-    public void daysInMonth3() throws Task01Exception {
+    public void daysInMonthNegative() throws Task01Exception {
         DaysInMonth daysInMonth = new DaysInMonth();
         daysInMonth.daysInMonth(-3, true);
+    }
+
+    @Test
+    public void isLeapYearTrue() {
+        DaysInMonth daysInMonth = new DaysInMonth();
+        boolean expected = true;
+        boolean actual = daysInMonth.isLeapYear(2020);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void isLeapYearFalse() {
+        DaysInMonth daysInMonth = new DaysInMonth();
+        boolean expected = false;
+        boolean actual = daysInMonth.isLeapYear(2021);
+        assertEquals(expected, actual);
     }
 
 }

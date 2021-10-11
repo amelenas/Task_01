@@ -3,7 +3,7 @@ package by.stepanovichalena.task_01.reader;
 import java.util.Scanner;
 
 public class ConsoleReader {
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
     public int readInt() {
         int result;
@@ -24,13 +24,6 @@ public class ConsoleReader {
             scanner.nextLine();
         }
         result = scanner.nextDouble();
-        return result;
-    }
-
-    public String readString() {
-        String result;
-        System.out.println("Enter a value: ");
-        result = scanner.nextLine();
         return result;
     }
 
